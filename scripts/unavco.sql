@@ -15,6 +15,8 @@ CREATE TABLE public.unavco_sites
   stationName character varying(250),
   epoch timestamp with time zone,
   referenceFrame character varying(250),
+  startTime timestamp with time zone,
+  stopTime timestamp with time zone,
   created_time timestamp with time zone default now(),
   geom geometry(PointZ,4326)
 )
