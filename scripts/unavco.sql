@@ -13,8 +13,6 @@ CREATE TABLE public.unavco_sites
   unavco_sites_id integer NOT NULL DEFAULT nextval('unavco_sites_id_seq'::regclass),
   id character varying(4),
   stationName character varying(250),
-  epoch timestamp with time zone,
-  referenceFrame character varying(250),
   startTime timestamp with time zone,
   stopTime timestamp with time zone,
   created_time timestamp with time zone default now(),
